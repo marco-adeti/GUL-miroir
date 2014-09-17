@@ -5,7 +5,8 @@ Scripts pour créer un miroir pour une install-party.
 
 on suppose ici que le chemin de base est __"/mnt/mirroir"__
 
-# Après avoir récupéré le dépot ou décompresser l'archive ...
+# Installation
+Après avoir récupéré le dépot ou décompressé l'archive ...
 
 ## Mise à jour du dépôt de fichiers
 
