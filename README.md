@@ -7,9 +7,9 @@ on suppose ici que le chemin de base est __"/mnt/mirroir"__
 
 Après avoir récupéré le dépot ou décompresser l'archive ...
 
-1. Mise à jour du dépôt de fichiers : 
+1. Mise à jour du dépôt de fichiers
 
-Exécuter le script de votre choix 
+  Exécuter le script de votre choix 
 >  cdimages.sh  debian-ubuntu.sh  fedora.sh  Mageia.sh  opensuse.sh
 
 2. Configuration du serveur apache2 pour debian
