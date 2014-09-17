@@ -1,0 +1,70 @@
+DEFAULT menu.c32
+ONTIMEOUT skip
+PROMPT 0
+TIMEOUT 100
+     
+MENU TITLE PXE Boot Menu
+       
+LABEL skip
+	MENU LABEL ^Boot from Hard Disk
+        MENU DEFAULT
+	LOCALBOOT 0
+			   
+LABEL trusty-amd64
+        MENU LABEL ^Ubuntu 14.04 (Trusty) amd64 Installer
+	kernel trusty-amd64/ubuntu-installer/amd64/linux
+	append vga=788 initrd=trusty-amd64/ubuntu-installer/amd64/initrd.gz -- quiet 
+
+LABEL trusty-i386
+        MENU LABEL ^Ubuntu 14.04 (Trusty) i386 Installer
+	kernel trusty-i386/ubuntu-installer/i386/linux
+	append vga=788 initrd=trusty-i386/ubuntu-installer/i386/initrd.gz -- quiet 
+
+LABEL precise-i386
+        MENU LABEL ^Ubuntu 12.04 (Precise) i386 Installer
+	kernel precise-i386/ubuntu-installer/i386/linux
+	append vga=788 initrd=precise-i386/ubuntu-installer/i386/initrd.gz -- quiet 
+	#KERNEL pxechain.com
+	#APPEND ::/precise-i386/pxelinux.0
+	#
+        #CONFIG precise-i386/ubuntu-installer/i386/pxelinux.cfg/default
+
+LABEL precise-i386
+        MENU LABEL ^Ubuntu 12.04 (Precise) i386 Installer PAE
+	kernel precise-i386-pae/ubuntu-installer/i386/linux
+	append vga=788 initrd=precise-i386-pae/ubuntu-installer/i386/initrd.gz -- quiet 
+
+LABEL precise-amd64
+        MENU LABEL ^Ubuntu 12.04 (Precise) amd64 Installer
+	kernel precise-amd64/ubuntu-installer/amd64/linux
+	append vga=788 initrd=precise-amd64/ubuntu-installer/amd64/initrd.gz -- quiet 
+
+LABEL wheezy-i386
+	MENU LABEL ^Debian 7.1 (Wheezy) i386 Installer
+	kernel wheezy-i386/debian-installer/i386/linux
+	append video=vesa:ywrap,mtrr vga=788 initrd=wheezy-i386/debian-installer/i386/initrd.gz -- quiet 
+
+LABEL wheezy-amd64
+	MENU LABEL ^Debian 7.1 (Wheezy) amd64 Installer
+	kernel wheezy-amd64/debian-installer/amd64/linux
+	append video=vesa:ywrap,mtrr vga=788 initrd=wheezy-amd64/debian-installer/amd64/initrd.gz -- quiet 
+
+LABEL Sysrescuecd x86-64 3.8.0
+	MENU LABEL ^Sysrescuecd x86-64 3.8.0
+	kernel systemrescuecd/rescue64
+	append initrd=systemrescuecd/initram.igz dodhcp netboot=http://192.168.11.127/systemrescuecd/sysrcd.dat docache setkmap=fr
+
+LABEL Sysrescuecd x86 3.8.0
+	MENU LABEL ^Sysrescuecd x86 3.8.0
+	kernel systemrescuecd/rescue32
+	append initrd=systemrescuecd/initram.igz dodhcp netboot=http://192.168.11.127/systemrescuecd/sysrcd.dat docache setkmap=fr
+
+
+LABEL Mandriva --Test
+	kernel memdisk
+	append initrd=mandriva/all.img
+
+
+LABEL Retour
+    MENU LABEL Retour
+    KERNEL pxelinux.0

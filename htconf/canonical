@@ -1,0 +1,25 @@
+<VirtualHost *:80>
+	ServerAdmin webmaster@localhost
+        ServerName archive.canonical.com
+
+	DocumentRoot /mnt/mirroir/debian-ubuntu/repo/archive.canonical.com
+        Alias /ubuntu /mnt/mirroir/debian-ubuntu/repo/archive.canonical.com
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+	<Directory /mnt/mirroir/debian-ubuntu/repo/archive.canonical.com/>
+		Options Indexes FollowSymLinks MultiViews
+		AllowOverride None
+		Order allow,deny
+		allow from all
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
