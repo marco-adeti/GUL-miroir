@@ -12,12 +12,12 @@ on suppose ici que le chemin de base est __"/mnt/mirroir"__
   Exécuter le script de votre choix 
 >  cdimages.sh  debian-ubuntu.sh  fedora.sh  Mageia.sh  opensuse.sh
 
-> 28G     cdimages
-> 505G    debian-ubuntu
-> 20G     fedora
-> 66G     Mageia
-> 16G     Mageia-iso
-> 198G    opensuse
+    28G     cdimages
+    505G    debian-ubuntu
+    20G     fedora
+    66G     Mageia
+    16G     Mageia-iso
+    198G    opensuse
 
 
 ## Configuration du serveur apache2 pour debian
@@ -28,7 +28,8 @@ on suppose ici que le chemin de base est __"/mnt/mirroir"__
 ## Configuration du tftpd-hpa :
 
   Editer le fichier /etc/default/tftpd-hpa pour adapter le chemain de base.
->  TFTP_DIRECTORY="/mnt/mirror/tftp"
+
+  TFTP_DIRECTORY="/mnt/mirror/tftp"
 
 
 # TODO :
