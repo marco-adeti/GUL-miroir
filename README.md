@@ -1,4 +1,4 @@
-GUL-mirroir
+GUL-miroir
 ===========
 
-Scripts pour créer un mirroir pour une install-party.
+Scripts pour créer un miroir pour une install-party.
