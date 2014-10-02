@@ -135,17 +135,12 @@ deb-src http://security.debian.org/ wheezy/updates main contrib non-free
 deb-src http://ftp.fr.debian.org/debian/ wheezy-updates main contrib non-free
 deb-src http://ftp.fr.debian.org/debian/ wheezy-backports main
 deb-src http://www.deb-multimedia.org wheezy main
-deb http://packages.dotdeb.org wheezy all
-deb-i386 http://packages.dotdeb.org wheezy all
-deb-src http://packages.dotdeb.org wheezy all
-deb http://packages.dotdeb.org wheezy-php55 all
-deb-i386 http://packages.dotdeb.org wheezy-php55 all
-deb-src http://packages.dotdeb.org wheezy-php55 all
-deb http://php53.dotdeb.org wheezy all
-deb-i386 http://php53.dotdeb.org wheezy all
-deb-src http://php53.dotdeb.org wheezy all
-#deb http://debian.nexen.net/dotdeb wheezy all
-#deb http://debian.nexen.net/awh wheezy all
+deb http://dotdeb.thefox.com.fr wheezy all
+deb-i386 http://dotdeb.thefox.com.fr wheezy all
+deb-src http://dotdeb.thefox.com.fr wheezy all
+deb http://dotdeb.thefox.com.fr wheezy-php55 all
+deb-i386 http://dotdeb.thefox.com.fr wheezy-php55 all
+deb-src http://dotdeb.thefox.com.fr wheezy-php55 all
 deb http://hwraid.le-vert.net/debian wheezy main
 deb-i386 http://hwraid.le-vert.net/debian wheezy main
 deb-src http://hwraid.le-vert.net/debian wheezy main
