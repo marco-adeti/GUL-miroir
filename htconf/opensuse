@@ -2,12 +2,12 @@
 	ServerAdmin webmaster@localhost
         ServerName download.opensuse.org
 
-	DocumentRoot /mnt/mirroir/opensuse
+	DocumentRoot /srv/miroir/opensuse
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
 	</Directory>
-	<Directory /mnt/mirroir/opensuse/>
+	<Directory /srv/miroir/opensuse/>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride None
 		Order allow,deny

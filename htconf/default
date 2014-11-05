@@ -1,12 +1,12 @@
 <VirtualHost *:80>
 	ServerAdmin webmaster@localhost
 
-	DocumentRoot /mnt/mirroir/htdocs
+	DocumentRoot /srv/miroir/htdocs
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
 	</Directory>
-	<Directory /mnt/mirroir/htdocs/>
+	<Directory /srv/miroir/htdocs/>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride None
 		Order allow,deny

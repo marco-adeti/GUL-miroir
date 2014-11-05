@@ -4,7 +4,7 @@
 ## The default configuration options (uncomment and change to override)
 ##
 #
-set base_path	/mnt/mirroir/debian-ubuntu
+set base_path	/srv/miroir/debian-ubuntu
 set mirror_path	$base_path/repo
 set skel_path	$base_path/skel
 set var_path	$base_path/var

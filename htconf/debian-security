@@ -2,12 +2,12 @@
 	ServerAdmin webmaster@localhost
         ServerName security.debian.org
 
-	DocumentRoot /mnt/mirroir/debian-ubuntu/repo/security.debian.org
+	DocumentRoot /srv/miroir/debian-ubuntu/repo/security.debian.org
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
 	</Directory>
-	<Directory /mnt/mirroir/debian-ubuntu/repo/security.debian.org/>
+	<Directory /srv/miroir/debian-ubuntu/repo/security.debian.org/>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride None
 		Order allow,deny

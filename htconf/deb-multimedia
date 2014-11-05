@@ -3,12 +3,12 @@
         ServerName www.deb-multimedia.org
         ServerAlias deb-multimedia.org
 
-	DocumentRoot /mnt/mirroir/debian-ubuntu/repo/www.deb-multimedia.org
+	DocumentRoot /srv/miroir/debian-ubuntu/repo/www.deb-multimedia.org
 	<Directory />
 		Options FollowSymLinks
 		AllowOverride None
 	</Directory>
-	<Directory /mnt/mirroir/debian-ubuntu/repo/www.deb-multimedia.org/>
+	<Directory /srv/miroir/debian-ubuntu/repo/www.deb-multimedia.org/>
 		Options Indexes FollowSymLinks MultiViews
 		AllowOverride None
 		Order allow,deny
