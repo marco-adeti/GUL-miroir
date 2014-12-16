@@ -22,11 +22,11 @@ set _tilde 0
 ## Example sources
 ##
 
-deb http://archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse main/debian-installer
-deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ precise-backports main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu precise-security main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ precise-proposed restricted main multiverse universe 
+deb http://archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb http://archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb http://archive.ubuntu.com/ubuntu/ precise-backports main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb http://archive.ubuntu.com/ubuntu precise-security main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb http://archive.ubuntu.com/ubuntu/ precise-proposed restricted main multiverse universe main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer  
 deb http://archive.canonical.com/ precise partner
 deb http://archive.canonical.com/ precise-updates partner
 deb http://archive.canonical.com/ precise-backports partner
@@ -35,11 +35,11 @@ deb-src http://archive.canonical.com/ precise partner
 deb-src http://archive.canonical.com/ precise-updates partner
 deb-src http://archive.canonical.com/ precise-backports partner
 deb-src http://archive.canonical.com/ precise-proposed partner
-deb-i386 http://archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse main/debian-installer
-deb-i386 http://archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse
-deb-i386 http://archive.ubuntu.com/ubuntu/ precise-backports main restricted universe multiverse
-deb-i386 http://archive.ubuntu.com/ubuntu precise-security main restricted universe multiverse
-deb-i386 http://archive.ubuntu.com/ubuntu/ precise-proposed restricted main multiverse universe 
+deb-i386 http://archive.ubuntu.com/ubuntu/ precise main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb-i386 http://archive.ubuntu.com/ubuntu/ precise-updates main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb-i386 http://archive.ubuntu.com/ubuntu/ precise-backports main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb-i386 http://archive.ubuntu.com/ubuntu precise-security main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb-i386 http://archive.ubuntu.com/ubuntu/ precise-proposed restricted main multiverse universe main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer  
 deb-i386 http://archive.canonical.com/ precise partner
 deb-i386 http://archive.canonical.com/ precise-updates partner
 deb-i386 http://archive.canonical.com/ precise-backports partner
@@ -78,22 +78,22 @@ deb-i386 http://archive.canonical.com/ saucy-proposed partner
 #deb-src http://archive.ubuntu.com/ubuntu saucy-security main restricted universe multiverse
 #deb-src http://archive.ubuntu.com/ubuntu/ saucy-proposed restricted main multiverse universe
 
-deb http://archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse main/debian-installer
-deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
-deb http://archive.ubuntu.com/ubuntu/ trusty-proposed restricted main multiverse universe 
+deb http://archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb http://archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb http://archive.ubuntu.com/ubuntu/ trusty-proposed restricted main multiverse universe main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
 deb http://archive.canonical.com/ trusty partner
 #deb http://archive.canonical.com/ trusty-updates partner
 #deb http://archive.canonical.com/ trusty-backports partner
 deb http://archive.canonical.com/ trusty-proposed partner
 deb-src http://archive.canonical.com/ trusty partner
 deb-src http://archive.canonical.com/ trusty-proposed partner
-deb-i386 http://archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse main/debian-installer
-deb-i386 http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb-i386 http://archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse
-deb-i386 http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse
-deb-i386 http://archive.ubuntu.com/ubuntu/ trusty-proposed restricted main multiverse universe 
+deb-i386 http://archive.ubuntu.com/ubuntu/ trusty main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb-i386 http://archive.ubuntu.com/ubuntu/ trusty-updates main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb-i386 http://archive.ubuntu.com/ubuntu/ trusty-backports main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb-i386 http://archive.ubuntu.com/ubuntu trusty-security main restricted universe multiverse main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer 
+deb-i386 http://archive.ubuntu.com/ubuntu/ trusty-proposed restricted main multiverse universe main/debian-installer restricted/debian-installer universe/debian-installer multiverse/debian-installer  
 deb-i386 http://archive.canonical.com/ trusty partner
 #deb-i386 http://archive.canonical.com/ trusty-updates partner
 #deb-i386 http://archive.canonical.com/ trusty-backports partner
