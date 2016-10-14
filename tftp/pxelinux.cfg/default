@@ -10,6 +10,16 @@ LABEL skip
         MENU DEFAULT
 	LOCALBOOT 0
 			   
+LABEL xenial-amd64
+        MENU LABEL ^Ubuntu 16.04 (Xenial) amd64 Installer
+	kernel xenial-amd64/ubuntu-installer/amd64/linux
+	append vga=788 initrd=xenial-amd64/ubuntu-installer/amd64/initrd.gz -- quiet 
+
+LABEL xenial-i386
+        MENU LABEL ^Ubuntu 16.04 (Xenial) i386 Installer
+	kernel xenial-i386/ubuntu-installer/i386/linux
+	append vga=788 initrd=xenial-i386/ubuntu-installer/i386/initrd.gz -- quiet 
+
 LABEL trusty-amd64
         MENU LABEL ^Ubuntu 14.04 (Trusty) amd64 Installer
 	kernel trusty-amd64/ubuntu-installer/amd64/linux
@@ -19,35 +29,20 @@ LABEL trusty-i386
         MENU LABEL ^Ubuntu 14.04 (Trusty) i386 Installer
 	kernel trusty-i386/ubuntu-installer/i386/linux
 	append vga=788 initrd=trusty-i386/ubuntu-installer/i386/initrd.gz -- quiet 
-
-LABEL precise-i386
-        MENU LABEL ^Ubuntu 12.04 (Precise) i386 Installer
-	kernel precise-i386/ubuntu-installer/i386/linux
-	append vga=788 initrd=precise-i386/ubuntu-installer/i386/initrd.gz -- quiet 
 	#KERNEL pxechain.com
-	#APPEND ::/precise-i386/pxelinux.0
+	#APPEND ::/trusty-i386/pxelinux.0
 	#
-        #CONFIG precise-i386/ubuntu-installer/i386/pxelinux.cfg/default
+        #CONFIG trusty-i386/ubuntu-installer/i386/pxelinux.cfg/default
 
-LABEL precise-i386
-        MENU LABEL ^Ubuntu 12.04 (Precise) i386 Installer PAE
-	kernel precise-i386-pae/ubuntu-installer/i386/linux
-	append vga=788 initrd=precise-i386-pae/ubuntu-installer/i386/initrd.gz -- quiet 
+LABEL jessie-amd64
+	MENU LABEL ^Debian 8 (Jessie) amd64 Installer
+	kernel jessie-amd64/debian-installer/amd64/linux
+	append video=vesa:ywrap,mtrr vga=788 initrd=jessie-amd64/debian-installer/amd64/initrd.gz -- quiet 
 
-LABEL precise-amd64
-        MENU LABEL ^Ubuntu 12.04 (Precise) amd64 Installer
-	kernel precise-amd64/ubuntu-installer/amd64/linux
-	append vga=788 initrd=precise-amd64/ubuntu-installer/amd64/initrd.gz -- quiet 
-
-LABEL wheezy-i386
-	MENU LABEL ^Debian 7.1 (Wheezy) i386 Installer
-	kernel wheezy-i386/debian-installer/i386/linux
-	append video=vesa:ywrap,mtrr vga=788 initrd=wheezy-i386/debian-installer/i386/initrd.gz -- quiet 
-
-LABEL wheezy-amd64
-	MENU LABEL ^Debian 7.1 (Wheezy) amd64 Installer
-	kernel wheezy-amd64/debian-installer/amd64/linux
-	append video=vesa:ywrap,mtrr vga=788 initrd=wheezy-amd64/debian-installer/amd64/initrd.gz -- quiet 
+LABEL jessie-i386
+	MENU LABEL ^Debian 8 (Jessie) i386 Installer
+	kernel jessie-i386/debian-installer/i386/linux
+	append video=vesa:ywrap,mtrr vga=788 initrd=jessie-i386/debian-installer/i386/initrd.gz -- quiet 
 
 LABEL Sysrescuecd x86-64 3.8.0
 	MENU LABEL ^Sysrescuecd x86-64 3.8.0
