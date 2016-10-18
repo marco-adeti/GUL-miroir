@@ -7,7 +7,7 @@ MIRRORDIR="$(dirname $0)/debian-ubuntu"
 #echo "Apt-mirror ..."
 #apt-mirror $MIRRORDIR/debian-ubuntu.mirror.list
 
-false ; while [ $? != 0 ] ; do debmirror --method=rsync --root=ubuntu --dist=trusty,trusty-updates,trusty-security,trusty-backports,trusty-proposed,xenial,xenial-updates,xenial-security,xenial-backports,xenial-proposed --host=archive.ubuntu.com --section=main,main/debian-installer,restricted,universe,multiverse --arch=i386,amd64 ${MIRRORDIR}/repo/archive.ubuntu.com/ubuntu/ --getcontents --ignore-release-gpg --progress --i18n --rsync-extra=doc,indices,tools,trace --di-dist=trusty,xenial --di-arch=i386,amd64 --allow-dist-rename --diff=mirror --slow-cpu; done
+false ; while [ $? != 0 ] ; do debmirror --method=rsync --root=ubuntu --dist=trusty,trusty-updates,trusty-security,trusty-backports,trusty-proposed,xenial,xenial-updates,xenial-security,xenial-backports,xenial-proposed --host=archive.ubuntu.com --section=main,main/debian-installer,restricted,universe,multiverse --arch=i386,amd64 ${MIRRORDIR}/repo/archive.ubuntu.com/ubuntu/ --getcontents --ignore-release-gpg --progress --i18n --rsync-extra=doc,indices,tools,trace --di-dist=trusty,trusty-updates,trusty-proposed,xenial,xenial-updates,xenial-proposed --di-arch=i386,amd64 --allow-dist-rename --diff=mirror --slow-cpu; done
 
 debmirror --method=http --root=/ --dist=trusty,trusty-proposed,xenial,xenial-proposed --host=archive.canonical.com --section=partner --arch=i386,amd64 ${MIRRORDIR}/repo/archive.canonical.com/ --getcontents --ignore-release-gpg --progress --i18n --rsync-extra=none --allow-dist-rename --diff=mirror --slow-cpu     
 
