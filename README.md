@@ -3,7 +3,7 @@ GUL-miroir
 
 Scripts pour créer un miroir pour une install-party.
 
-on suppose ici que le chemin de base est __"/mnt/mirroir"__
+on suppose ici que le chemin de base est __"/mnt/miroir"__
 
 # Installation
 Après avoir récupéré le dépot ou décompressé l'archive ...
@@ -39,3 +39,11 @@ Après avoir récupéré le dépot ou décompressé l'archive ...
 - Script déploiement tftpd-hpa
 - Script de déploiement des installateurs netboot
 - conf pxe et dns via dnsmasq
+
+# Debmirror signature error
+
+apt-get install ubuntu-archive-keyring debian-archive-keyring
+gpg --keyring /usr/share/keyrings/debian-archive-keyring.gpg --export | gpg --no-default-keyring --keyring /srv/miroir/trustedkeys.gpg --import
+gpg --keyring /usr/share/keyrings/ubuntu-archive-keyring.gpg --export | gpg --no-default-keyring --keyring /srv/miroir/trustedkeys.gpg --import
+gpg --keyserver pgpkeys.mit.edu --recv-key 65558117
+gpg -a --export 65558117 | gpg --no-default-keyring --keyring /srv/miroir/trustedkeys.gpg --import
