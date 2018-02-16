@@ -20,19 +20,29 @@ LABEL xenial-i386
 	kernel xenial-i386/ubuntu-installer/i386/linux
 	append vga=788 initrd=xenial-i386/ubuntu-installer/i386/initrd.gz -- quiet 
 
-LABEL trusty-amd64
-        MENU LABEL ^Ubuntu 14.04 (Trusty) amd64 Installer
-	kernel trusty-amd64/ubuntu-installer/amd64/linux
-	append vga=788 initrd=trusty-amd64/ubuntu-installer/amd64/initrd.gz -- quiet 
+LABEL bionic-amd64
+        MENU LABEL ^Ubuntu 18.04 (Bionic) amd64 Installer
+	kernel bionic-amd64/ubuntu-installer/amd64/linux
+	append vga=788 initrd=bionic-amd64/ubuntu-installer/amd64/initrd.gz -- quiet 
 
-LABEL trusty-i386
-        MENU LABEL ^Ubuntu 14.04 (Trusty) i386 Installer
-	kernel trusty-i386/ubuntu-installer/i386/linux
-	append vga=788 initrd=trusty-i386/ubuntu-installer/i386/initrd.gz -- quiet 
+LABEL bionic-i386
+        MENU LABEL ^Ubuntu 18.04 (Bionic) i386 Installer
+	kernel bionic-i386/ubuntu-installer/i386/linux
+	append vga=788 initrd=bionic-i386/ubuntu-installer/i386/initrd.gz -- quiet 
 	#KERNEL pxechain.com
-	#APPEND ::/trusty-i386/pxelinux.0
+	#APPEND ::/bionic-i386/pxelinux.0
 	#
-        #CONFIG trusty-i386/ubuntu-installer/i386/pxelinux.cfg/default
+        #CONFIG bionic-i386/ubuntu-installer/i386/pxelinux.cfg/default
+
+LABEL stretch-amd64
+	MENU LABEL ^Debian 9 (Stretch) amd64 Installer
+	kernel stretch-amd64/debian-installer/amd64/linux
+	append video=vesa:ywrap,mtrr vga=788 initrd=stretch-amd64/debian-installer/amd64/initrd.gz -- quiet 
+
+LABEL stretch-i386
+	MENU LABEL ^Debian 9 (Stretch) i386 Installer
+	kernel stretch-i386/debian-installer/i386/linux
+	append video=vesa:ywrap,mtrr vga=788 initrd=stretch-i386/debian-installer/i386/initrd.gz -- quiet 
 
 LABEL jessie-amd64
 	MENU LABEL ^Debian 8 (Jessie) amd64 Installer
