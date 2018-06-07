@@ -1,2 +1,8 @@
 /OLD
 htdocs/systemrescuecd/**
+debian-ubuntu.log
+debian-ubuntu.tmp.sh
+htconf/anr.conf
+htdocs/anr
+htdocs/primtux
+repo

@@ -10,6 +10,11 @@ LABEL skip
         MENU DEFAULT
 	LOCALBOOT 0
 			   
+LABEL xenial-amd64-anr
+        MENU LABEL ^Ubuntu 16.04 (Xenial) amd64 Installer Atelier Numerique Romo 
+	kernel xenial-amd64/ubuntu-installer/amd64/linux
+	append vga=788 initrd=xenial-amd64/ubuntu-installer/amd64/initrd.gz auto-install/enable=true preseed/url=tftp://10.41.15.114/anr.preseed keyboard-configuration/layoutcode=fr keyboard-configuration/variantcode French - French (legacy, alternative) DEBCONF_DEBUG=5 -- quiet 
+
 LABEL xenial-amd64
         MENU LABEL ^Ubuntu 16.04 (Xenial) amd64 Installer
 	kernel xenial-amd64/ubuntu-installer/amd64/linux
@@ -18,7 +23,12 @@ LABEL xenial-amd64
 LABEL xenial-i386
         MENU LABEL ^Ubuntu 16.04 (Xenial) i386 Installer
 	kernel xenial-i386/ubuntu-installer/i386/linux
-	append vga=788 initrd=xenial-i386/ubuntu-installer/i386/initrd.gz -- quiet 
+	append vga=788 initrd=xenial-i386/ubuntu-installer/i386/initrd.gz -- quiet
+ 
+LABEL bionic-amd64-anr
+        MENU LABEL ^Ubuntu 18.04 (Bionic) amd64 Installer Atelier Numerique Romo
+        kernel bionic-amd64/ubuntu-installer/amd64/linux
+        append vga=788 initrd=bionic-amd64/ubuntu-installer/amd64/initrd.gz auto-install/enable=true preseed/url=tftp://10.41.15.114/anr.preseed locale=fr_FR.UTF-8 keyboard-configuration/layoutcode=fr keyboard-configuration/variantcode French - French (legacy, alternative) DEBCONF_DEBUG=5 -- quiet
 
 LABEL bionic-amd64
         MENU LABEL ^Ubuntu 18.04 (Bionic) amd64 Installer
